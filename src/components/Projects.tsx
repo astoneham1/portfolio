@@ -14,7 +14,7 @@ const projects: ProjectProps[] = [
   },
   {
     title: "Order Simulator",
-    description: "Built for food lovers, this immersive simulator lets you choose your favorite restaurant, explore a vast catalog of food and drink items and experience the fun of placing and customizing orders—without spending a penny.",
+    description: "Built for food lovers, this immersive simulator lets you choose your favorite restaurant or some of the fictional ones, explore a vast catalog of food and drink items and experience the fun of placing and customizing orders—without spending a penny.",
     image: "https://i.pinimg.com/736x/40/25/26/4025261b4df426168b8da38093b83a66.jpg",
     tags: ["React", "Node.js", "MongoDB", "D3.js"],
     githubUrl: "",
@@ -31,7 +31,7 @@ const projects: ProjectProps[] = [
   {
     title: "Rainbow Six Siege Clip Hub",
     description: "A central site for me to store links to folders containing gameplay clips from Tom Clancy's Rainbow Six Siege from 2020 onwards.",
-    image: "https://imgur.com/a/5Vz0BSi",
+    image: "https://imgur.com/4UqI414",
     tags: ["HTML", "CSS"],
     githubUrl: "https://github.com/astoneham1/clips",
     liveUrl: "https://clips.alexstoneham.co.uk"
