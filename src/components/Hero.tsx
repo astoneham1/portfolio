@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -42,7 +41,7 @@ const Hero = () => {
       </p>
       <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in animation-delay-500">
         <Button className="bg-portfolio-accent hover:bg-portfolio-accent-light text-white">
-          View Projects
+          <a href="#projects">View Projects</a>
         </Button>
         <Button variant="outline" className="border-gray-700 hover:bg-gray-800">
           Download Resume

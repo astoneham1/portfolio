@@ -5,34 +5,34 @@ import { useInView } from 'react-intersection-observer';
 
 const projects: ProjectProps[] = [
   {
-    title: "E-Commerce Dashboard",
-    description: "A responsive admin dashboard with charts, tables and advanced filtering for an e-commerce platform.",
+    title: "Java + SQLite Implementation Example",
+    description: "A university assignment - I created a Java application that connects to an SQLite database, allowing users to perform CRUD operations on a simple data model such as inserting predefined DDL schema and queries with command line arguments.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Dashboard",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
+    tags: ["Java", "SQLite", "JDBC API", "Command Line args"],
     githubUrl: "https://github.com/yourusername/ecommerce-dashboard",
     liveUrl: "https://ecommerce-dashboard.example.com"
   },
   {
-    title: "Personal Finance Tracker",
-    description: "A web app that helps users track expenses, manage budgets, and visualize spending patterns.",
+    title: "Order Simulator",
+    description: "Built for food lovers, choose your restaurant and browse a vast catalog of food and drink items.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Finance+App",
     tags: ["React", "Node.js", "MongoDB", "D3.js"],
     githubUrl: "https://github.com/yourusername/finance-tracker",
     liveUrl: "https://finance-tracker.example.com"
   },
   {
-    title: "Weather Forecast App",
-    description: "A sleek weather application that provides current and forecasted weather conditions for any location.",
+    title: "Lightweight EAFC 24 Pack Opener and Minigames",
+    description: "A sleek application where you can pack cards, build drafts, and play an endless amount of minigames with the cards in EA's FC 24.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Weather+App",
-    tags: ["React", "Redux", "Weather API", "CSS Modules"],
+    tags: ["Livecode", "SQLite", "EAFC24", "FIFA"],
     githubUrl: "https://github.com/yourusername/weather-app",
     liveUrl: "https://weather-app.example.com"
   },
   {
-    title: "Social Media Dashboard",
-    description: "A unified dashboard to manage and analyze multiple social media accounts from one place.",
+    title: "Rainbow Six Siege Clip Hub",
+    description: "A central site for me to store links to folders containing gameplay clips from Tom Clancy's Rainbow Six Siege from 2020 onwards.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Social+Media",
-    tags: ["Next.js", "OAuth", "PostgreSQL", "TailwindCSS"],
+    tags: ["HTML", "CSS"],
     githubUrl: "https://github.com/yourusername/social-dashboard",
     liveUrl: "https://social-dashboard.example.com"
   }
