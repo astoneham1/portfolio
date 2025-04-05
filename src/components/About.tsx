@@ -4,17 +4,17 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Code, Server, Palette, Cpu } from 'lucide-react';
 
 const skills = [
-  //{
-    //category: "Frontend",
-    //items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "JavaScript"]
-  //},
   {
-    category: "Backend",
-    items: ["Java", "Lua", "Python", "Bash", "SQLite", "MongoDB"]
+    category: "Currently Learning",
+    items: ["React", "TypeScript", "Node.js", "Tailwind CSS", "JavaScript"]
+  },
+  {
+    category: "Skills",
+    items: ["Java", "Lua", "Python", "Bash", "SQLite", "MongoDB", "HTML", "CSS"]
   },
   {
     category: "Tools",
-    items: ["Git", "Firebase", "Linux"]
+    items: ["Git", "Firebase", "Linux", "VS Code", "Figma"]
   }
 ];
 
@@ -49,13 +49,17 @@ const About = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <AboutItem icon={Code} title="Frontend Development">
-            I create responsive, interactive user interfaces using modern frameworks and libraries. 
-            With a strong focus on performance and accessibility, I build web applications that work for everyone.
+          Frontend development has become a strong area of interest for me, driven by a genuine passion for creating 
+          engaging and intuitive user experiences. As I continue to build my skills in HTML, CSS, and JavaScript, 
+          I'm increasingly fascinated by the intersection of design and functionality. 
           </AboutItem>
           
           <AboutItem icon={Server} title="Backend Development">
-            I design and implement robust APIs, database architectures, and server-side applications.
-            My backend solutions are secure, scalable, and built with best practices in mind.
+          Backend development is an area where I feel confident and continually motivated to grow. 
+          With experience in languages like Java, I enjoy designing robust, scalable systems that power applications behind the scenes. 
+          I'm particularly interested in how data flows through an application, from server logic to database interactions, 
+          and how performance and security can be optimized at every layer. I take pride in writing clean, 
+          maintainable code and understanding the architecture that supports reliable, high-performance software.
           </AboutItem>
           
           <AboutItem icon={Palette} title="UI/UX Design">
@@ -64,8 +68,9 @@ const About = () => {
           </AboutItem>
           
           <AboutItem icon={Cpu} title="Continuous Learning">
-            Technology evolves rapidly, and I'm committed to growing with it. 
-            I constantly explore new tools, languages, and frameworks to expand my skill set.
+          Technology is constantly evolving, and I'm committed to staying up to date by continuously expanding my knowledge and skill set. 
+          Whether it's exploring new frameworks, diving into documentation, or building personal projects to test new concepts, 
+          I approach learning with curiosity and enthusiasm. I actively seek out challenges that push me beyond my comfort zone and help me grow as a developer.
           </AboutItem>
         </div>
         
