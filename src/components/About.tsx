@@ -57,14 +57,13 @@ const About = () => {
           <AboutItem icon={Server} title="Backend Development">
           Backend development is an area where I feel confident and continually motivated to grow. 
           With experience in languages like Java, I enjoy designing robust, scalable systems that power applications behind the scenes. 
-          I'm particularly interested in how data flows through an application, from server logic to database interactions, 
-          and how performance and security can be optimized at every layer. I take pride in writing clean, 
-          maintainable code and understanding the architecture that supports reliable, high-performance software.
+          I'm particularly interested in how data flows through an application, from server logic to database interactions.
           </AboutItem>
           
           <AboutItem icon={Palette} title="UI/UX Design">
-            I have a passion for clean, intuitive designs that enhance user experience. 
-            I work to create interfaces that are not just functional, but delightful to use.
+          I've developed a strong interest in UX design because I enjoy thinking from the user's perspective and finding ways to make 
+          digital experiences feel natural and intuitive. When working on projects, I focus on how people will interact with the interface 
+          and how each decision affects usability. I find it really rewarding to take something complex and simplify it into a clean, user-friendly design. 
           </AboutItem>
           
           <AboutItem icon={Cpu} title="Continuous Learning">
