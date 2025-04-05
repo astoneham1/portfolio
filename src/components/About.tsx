@@ -41,7 +41,9 @@ const About = () => {
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">About Me</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            I'm a passionate full-stack developer with a keen eye for design and a love for creating efficient, elegant solutions.
+            I'm an aspiring developer who's passionate to learn and grow in the tech industry.
+            I have a strong foundation in both frontend and backend development,
+            and I'm always eager to take on new challenges.
           </p>
         </div>
         
