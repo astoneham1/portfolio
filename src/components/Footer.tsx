@@ -11,7 +11,7 @@ const Footer = () => {
           <h3 className="text-lg font-mono font-semibold">
             <span className="text-portfolio-accent">{'<'}</span>
             <span className="text-portfolio-light">astoneham</span>
-            <span className="text-portfolio-accent">{'/ >'}</span>
+            <span className="text-portfolio-accent">{'/>'}</span>
           </h3>
         </div>
         <div className="mt-4 md:mt-0 text-gray-400 text-sm">

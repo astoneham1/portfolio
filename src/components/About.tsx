@@ -4,17 +4,17 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Code, Server, Palette, Cpu } from 'lucide-react';
 
 const skills = [
-  {
-    category: "Frontend",
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "JavaScript"]
-  },
+  //{
+    //category: "Frontend",
+    //items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "JavaScript"]
+  //},
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"]
+    items: ["Java", "Lua", "Python", "Bash", "SQLite", "MongoDB"]
   },
   {
     category: "Tools",
-    items: ["Git", "Docker", "AWS", "Firebase", "Figma", "VS Code"]
+    items: ["Git", "Firebase", "Linux"]
   }
 ];
 
