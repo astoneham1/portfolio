@@ -5,18 +5,18 @@ import { ArrowDown } from 'lucide-react';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const fullText = "Student at the University of St Andrews and aspiring software engineer.";
-  
+  const indexRef = React.useRef(0);
+
   useEffect(() => {
-    let i = 0;
     const typingInterval = setInterval(() => {
-      if (i < fullText.length) {
-        setDisplayText(prev => prev + fullText.charAt(i));
-        i++;
+      if (indexRef.current < fullText.length) {
+        setDisplayText(prev => prev + fullText.charAt(indexRef.current));
+        indexRef.current += 1;
       } else {
         clearInterval(typingInterval);
       }
     }, 100);
-    
+
     return () => clearInterval(typingInterval);
   }, []);
 
