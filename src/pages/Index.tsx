@@ -8,6 +8,11 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  // Update the page title when component mounts
+  React.useEffect(() => {
+    document.title = "Alex Stoneham | Portfolio";
+  }, []);
+
   return (
     <div className="min-h-screen bg-portfolio-dark text-portfolio-light">
       <Navbar />

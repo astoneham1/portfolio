@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="mb-4 md:mb-0">
           <h3 className="text-lg font-mono font-semibold">
             <span className="text-portfolio-accent">{'<'}</span>
-            <span className="text-portfolio-light">YourName</span>
+            <span className="text-portfolio-light">Alex Stoneham</span>
             <span className="text-portfolio-accent">{' />'}</span>
           </h3>
         </div>
