@@ -64,7 +64,7 @@ const Contact = () => {
                   <Mail className="h-5 w-5 text-portfolio-accent" />
                 </div>
                 <a href="mailto:your.email@example.com" className="text-gray-300 hover:text-portfolio-accent">
-                  your.email@example.com
+                  me@alexstoneham.co.uk
                 </a>
               </div>
               
@@ -73,12 +73,12 @@ const Contact = () => {
                   <Github className="h-5 w-5 text-portfolio-accent" />
                 </div>
                 <a 
-                  href="https://github.com/yourusername" 
+                  href="https://github.com/astoneham1" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-portfolio-accent"
                 >
-                  github.com/yourusername
+                  github.com/astoneham1
                 </a>
               </div>
               
@@ -87,12 +87,12 @@ const Contact = () => {
                   <Linkedin className="h-5 w-5 text-portfolio-accent" />
                 </div>
                 <a 
-                  href="https://linkedin.com/in/yourusername" 
+                  href="https://www.linkedin.com/in/alexander-stoneham-03aa70341/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-portfolio-accent"
                 >
-                  linkedin.com/in/yourusername
+                  linkedin.com/in/alexander-stoneham
                 </a>
               </div>
               
@@ -101,22 +101,22 @@ const Contact = () => {
                   <Twitter className="h-5 w-5 text-portfolio-accent" />
                 </div>
                 <a 
-                  href="https://twitter.com/yourusername" 
+                  href="https://twitter.com/chiefkeykaad" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-portfolio-accent"
                 >
-                  twitter.com/yourusername
+                  twitter.com/chiefkeykaad
                 </a>
               </div>
             </div>
             
             <div className="border-t border-gray-800 pt-6 mt-8">
               <p className="text-gray-400">
-                Based in San Francisco, CA
+                Based in Edinburgh and St Andrews, Scotland
               </p>
               <p className="text-gray-400 mt-2">
-                Available for remote work worldwide
+                Available for remote work within the UK
               </p>
             </div>
           </div>

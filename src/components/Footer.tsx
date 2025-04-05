@@ -10,15 +10,12 @@ const Footer = () => {
         <div className="mb-4 md:mb-0">
           <h3 className="text-lg font-mono font-semibold">
             <span className="text-portfolio-accent">{'<'}</span>
-            <span className="text-portfolio-light">Alex Stoneham</span>
-            <span className="text-portfolio-accent">{' />'}</span>
+            <span className="text-portfolio-light">astoneham</span>
+            <span className="text-portfolio-accent">{'/>'}</span>
           </h3>
         </div>
-        <div className="text-gray-400 text-sm">
-          © {currentYear} All rights reserved.
-        </div>
         <div className="mt-4 md:mt-0 text-gray-400 text-sm">
-          Built with <span className="text-portfolio-accent">♥</span> using React & Tailwind CSS
+        © {currentYear} All rights reserved.
         </div>
       </div>
     </footer>
