@@ -9,13 +9,13 @@ const projects: ProjectProps[] = [
     description: "A university assignment - I created a Java application that connects to an SQLite database, allowing users to perform CRUD operations on a simple data model such as inserting predefined DDL schema and queries with command line arguments.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Dashboard",
     tags: ["Java", "SQLite", "JDBC API", "Command Line args"],
-    githubUrl: "https://github.com/yourusername/ecommerce-dashboard",
+    githubUrl: "https://astoneham1.github.io/P3/",
     liveUrl: "https://ecommerce-dashboard.example.com"
   },
   {
     title: "Order Simulator",
     description: "Built for food lovers, choose your restaurant and browse a vast catalog of food and drink items.",
-    image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Finance+App",
+    image: "https://i.pinimg.com/736x/40/25/26/4025261b4df426168b8da38093b83a66.jpg",
     tags: ["React", "Node.js", "MongoDB", "D3.js"],
     githubUrl: "https://github.com/yourusername/finance-tracker",
     liveUrl: "https://finance-tracker.example.com"
@@ -31,10 +31,10 @@ const projects: ProjectProps[] = [
   {
     title: "Rainbow Six Siege Clip Hub",
     description: "A central site for me to store links to folders containing gameplay clips from Tom Clancy's Rainbow Six Siege from 2020 onwards.",
-    image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Social+Media",
+    image: "https://imgur.com/a/5Vz0BSi",
     tags: ["HTML", "CSS"],
-    githubUrl: "https://github.com/yourusername/social-dashboard",
-    liveUrl: "https://social-dashboard.example.com"
+    githubUrl: "https://github.com/astoneham1/clips",
+    liveUrl: "https://clips.alexstoneham.co.uk"
   }
 ];
 
