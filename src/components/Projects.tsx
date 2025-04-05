@@ -10,23 +10,23 @@ const projects: ProjectProps[] = [
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Dashboard",
     tags: ["Java", "SQLite", "JDBC API", "Command Line args"],
     githubUrl: "https://astoneham1.github.io/P3/",
-    liveUrl: "https://ecommerce-dashboard.example.com"
+    liveUrl: ""
   },
   {
     title: "Order Simulator",
     description: "Built for food lovers, this immersive simulator lets you choose your favorite restaurant, explore a vast catalog of food and drink items and experience the fun of placing and customizing orders—without spending a penny.",
     image: "https://i.pinimg.com/736x/40/25/26/4025261b4df426168b8da38093b83a66.jpg",
     tags: ["React", "Node.js", "MongoDB", "D3.js"],
-    githubUrl: "https://github.com/yourusername/finance-tracker",
-    liveUrl: "https://finance-tracker.example.com"
+    githubUrl: "",
+    liveUrl: ""
   },
   {
     title: "Lightweight EAFC 24 Pack Opener and Minigames",
     description: "A sleek application where you can pack cards, build drafts, and play an endless amount of minigames with the cards in EA's FC 24.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Weather+App",
     tags: ["Livecode", "SQLite", "EAFC24", "FIFA"],
-    githubUrl: "https://github.com/yourusername/weather-app",
-    liveUrl: "https://weather-app.example.com"
+    githubUrl: "",
+    liveUrl: ""
   },
   {
     title: "Rainbow Six Siege Clip Hub",
