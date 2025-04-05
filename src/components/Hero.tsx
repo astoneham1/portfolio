@@ -9,12 +9,15 @@ const Hero = () => {
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
-      if (indexRef.current < fullText.length) {
-        setDisplayText(prev => prev + fullText.charAt(indexRef.current));
-        indexRef.current += 1;
-      } else {
-        clearInterval(typingInterval);
-      }
+      setDisplayText((prev) => {
+        const nextIndex = prev.length;
+        if (nextIndex < fullText.length) {
+          return prev + fullText.charAt(nextIndex);
+        } else {
+          clearInterval(typingInterval);
+          return prev;
+        }
+      });
     }, 100);
 
     return () => clearInterval(typingInterval);
