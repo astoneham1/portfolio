@@ -50,7 +50,8 @@ const Projects = () => {
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">Projects</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Here are some of my recent projects. Each one was designed and built with attention to detail and a focus on user experience.
+            Here are some of my recent projects. I enjoy working on a variety of projects, 
+            including ones made just for fun and others with a designed purpose and a focus on user experience.
           </p>
         </div>
         <div 

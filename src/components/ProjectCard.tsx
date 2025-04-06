@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -59,7 +58,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
           <Button variant="ghost" size="sm" className="px-2 ml-auto">
             <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
               <ExternalLink className="h-4 w-4 mr-2" />
-              Live Demo
+              View Project
             </a>
           </Button>
         )}
