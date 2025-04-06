@@ -23,7 +23,7 @@ const projects: ProjectProps[] = [
   {
     title: "Lightweight EAFC 24 Pack Opener and Minigames",
     description: "A sleek application where you can pack cards, build drafts, and play an endless amount of minigames with the cards in EA's FC 24.",
-    image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Weather+App",
+    image: "https://i.gyazo.com/bf7e8b23b803faf872272ad60993d835.jpg",
     tags: ["Livecode", "SQLite", "EAFC24", "FIFA"],
     githubUrl: "https://github.com/astoneham1/",
     liveUrl: ""
@@ -31,7 +31,7 @@ const projects: ProjectProps[] = [
   {
     title: "Rainbow Six Siege Clip Hub",
     description: "A central site for me to store links to folders containing gameplay clips from Tom Clancy's Rainbow Six Siege from 2020 onwards.",
-    image: "https://imgur.com/4UqI414",
+    image: "https://i.postimg.cc/Pf0r5GHp/Screenshot-2025-04-06-at-1-08-34-AM.png",
     tags: ["HTML", "CSS"],
     githubUrl: "https://github.com/astoneham1/clips",
     liveUrl: "https://clips.alexstoneham.co.uk"
