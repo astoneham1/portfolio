@@ -8,7 +8,7 @@ const projects: ProjectProps[] = [
     title: "Java + SQLite Implementation Example",
     description: "A university assignment - I created a Java application that connects to an SQLite database, allowing users to perform CRUD operations on a simple data model such as inserting predefined DDL schema and queries with command line arguments.",
     image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Dashboard",
-    tags: ["Java", "SQLite", "JDBC API", "Command Line args"],
+    tags: ["Java", "SQLite", "JDBC API", "Command Line Args"],
     githubUrl: "https://astoneham1.github.io/P3/",
     liveUrl: ""
   },
