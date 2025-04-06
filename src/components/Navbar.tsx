@@ -8,9 +8,9 @@ const Navbar = () => {
     <nav className="py-4 px-6 md:px-10 w-full flex justify-between items-center border-b border-gray-800">
       <div>
         <h1 className="text-lg font-mono font-semibold">
-          <span className="text-portfolio-accent">{'<'}</span>
+          <span className="text-portfolio-accent">{'< '}</span>
           <span className="text-portfolio-light">astoneham</span>
-          <span className="text-portfolio-accent">{'/>'}</span>
+          <span className="text-portfolio-accent">{'/ >'}</span>
         </h1>
       </div>
       <div className="hidden md:flex space-x-8">
