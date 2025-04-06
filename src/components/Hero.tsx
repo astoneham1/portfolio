@@ -47,7 +47,9 @@ const Hero = () => {
           <a href="#projects">View Projects</a>
         </Button>
         <Button variant="outline" className="border-gray-700 hover:bg-gray-800">
-          Download Resume
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            Download Resume
+          </a>
         </Button>
       </div>
       <div className="absolute bottom-8 animate-bounce">
