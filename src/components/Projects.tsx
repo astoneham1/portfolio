@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import ProjectCard, { ProjectProps } from './ProjectCard';
 import { useInView } from 'react-intersection-observer';
@@ -7,7 +6,7 @@ const projects: ProjectProps[] = [
   {
     title: "Java + SQLite Implementation Example",
     description: "A university assignment - I created a Java application that connects to an SQLite database, allowing users to perform CRUD operations on a simple data model such as inserting predefined DDL schema and queries with command line arguments.",
-    image: "https://via.placeholder.com/500x300/1a1a1a/808080?text=Dashboard",
+    image: "/placeholder.svg",
     tags: ["Java", "SQLite", "JDBC API", "Command Line Args"],
     githubUrl: "https://astoneham1.github.io/P3/",
     liveUrl: ""
@@ -15,7 +14,7 @@ const projects: ProjectProps[] = [
   {
     title: "Order Simulator",
     description: "Built for food lovers, this immersive simulator lets you choose your favorite restaurant or some of the fictional ones, explore a vast catalog of food and drink items and experience the fun of placing and customizing orders—without spending a penny.",
-    image: "https://i.pinimg.com/736x/40/25/26/4025261b4df426168b8da38093b83a66.jpg",
+    image: "/placeholder.svg",
     tags: ["React", "Node.js", "MongoDB", "D3.js"],
     githubUrl: "https://github.com/astoneham1/",
     liveUrl: ""
