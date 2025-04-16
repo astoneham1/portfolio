@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
 }) => {
   return (
     <Card className="project-card bg-transparent border-gray-800">
-      <div className="relative overflow-hidden h-48">
+      <div className="relative overflow-hidden h-96">
         <img 
           src={image} 
           alt={title} 
