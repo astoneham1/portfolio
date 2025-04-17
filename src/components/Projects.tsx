@@ -20,8 +20,8 @@ const projects: ProjectProps[] = [
     liveUrl: ""
   },
   {
-    title: "Lightweight EAFC 24 Pack Opener and Minigames",
-    description: "A sleek application where you can pack cards, build drafts, and play an endless amount of minigames with the cards in EA's FC 24.",
+    title: "EAFC 24 Pack Opener and Minigames",
+    description: "A lightweight application where you can pack cards, build drafts, and play an endless amount of minigames with the cards in EA's FC 24.",
     image: "https://i.gyazo.com/e3ccd1dab2765ef235bf4c9c2feee7fa.png",
     //image: "https://i.gyazo.com/bf7e8b23b803faf872272ad60993d835.jpg",
     tags: ["Livecode", "SQLite", "EAFC24", "FIFA"],
@@ -30,7 +30,7 @@ const projects: ProjectProps[] = [
   },
   {
     title: "Rainbow Six Siege Clip Hub",
-    description: "A central site for me to store links to folders containing gameplay clips from Tom Clancy's Rainbow Six Siege from 2020 onwards.",
+    description: "A site for me to store links to folders containing gameplay clips from Tom Clancy's Rainbow Six Siege from 2020 onwards.",
     image: "https://i.gyazo.com/308886c407e530f658062993c6226917.png",
     tags: ["HTML", "CSS"],
     githubUrl: "https://github.com/astoneham1/clips",
@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">Projects</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Here are some of my recent projects. I enjoy working on a variety of projects, 
             including ones made just for fun and others with a designed purpose and a focus on user experience.
           </p>

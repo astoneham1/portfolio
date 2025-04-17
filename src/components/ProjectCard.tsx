@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
   liveUrl
 }) => {
   return (
-    <Card className="project-card bg-transparent border-gray-800">
+    <Card className="project-card bg-card border-border">
       <div className="relative overflow-hidden h-96">
         <img 
           src={image} 
@@ -31,23 +31,23 @@ const ProjectCard: React.FC<ProjectProps> = ({
         />
       </div>
       <CardHeader className="pt-6 pb-2">
-        <CardTitle className="text-xl font-bold">{title}</CardTitle>
+        <CardTitle className="text-xl font-bold text-foreground">{title}</CardTitle>
         <div className="flex flex-wrap gap-2 mt-2">
           {tags.map((tag, index) => (
-            <Badge key={index} variant="secondary" className="bg-gray-800 text-gray-300 hover:bg-gray-700">
+            <Badge key={index} variant="secondary" className="bg-secondary text-secondary-foreground hover:bg-secondary/80">
               {tag}
             </Badge>
           ))}
         </div>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-gray-400">
+        <CardDescription className="text-muted-foreground">
           {description}
         </CardDescription>
       </CardContent>
       <CardFooter className="flex justify-between">
         {githubUrl && (
-          <Button variant="ghost" size="sm" className="px-2">
+          <Button variant="ghost" size="sm" className="px-2 text-foreground hover:text-foreground">
             <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
               <Github className="h-4 w-4 mr-2" />
               Code
@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
           </Button>
         )}
         {liveUrl && (
-          <Button variant="ghost" size="sm" className="px-2 ml-auto">
+          <Button variant="ghost" size="sm" className="px-2 ml-auto text-foreground hover:text-foreground">
             <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
               <ExternalLink className="h-4 w-4 mr-2" />
               View Project
