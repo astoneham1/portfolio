@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">Projects</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground max-w-2xl mx-auto">
             Here are some of my recent projects. I enjoy working on a variety of projects, 
             including ones made just for fun and others with a designed purpose and a focus on user experience.
           </p>

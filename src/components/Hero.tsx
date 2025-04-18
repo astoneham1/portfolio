@@ -48,7 +48,7 @@ const Hero = () => {
         </h2>
       </div>
 
-      <p className="max-w-2xl text-muted-foreground my-6 animate-fade-in animation-delay-400">
+      <p className="max-w-2xl text-foreground my-6 animate-fade-in animation-delay-400">
         Experienced in Java backend development and SQL database management,
         I also possess a strong interest in front-end technologies.
         My ongoing professional development includes studying networking principles and the C programming language.

@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
         </div>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-muted-foreground">
+        <CardDescription className="text-foreground">
           {description}
         </CardDescription>
       </CardContent>

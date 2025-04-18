@@ -26,7 +26,7 @@ const AboutItem = ({ icon: Icon, title, children }: { icon: React.ElementType, t
         </div>
         <div>
           <h3 className="text-lg font-medium mb-2 text-foreground">{title}</h3>
-          <div className="text-muted-foreground">{children}</div>
+          <div className="text-foreground">{children}</div>
         </div>
       </div>
     </CardContent>
@@ -39,7 +39,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">About Me</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground max-w-2xl mx-auto">
             I'm an aspiring developer who's passionate to learn and grow in the tech industry.
             I have a strong foundation in both frontend and backend development,
             and I'm always eager to take on new challenges.

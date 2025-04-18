@@ -7,13 +7,13 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground max-w-2xl mx-auto">
             I'm currently open to new opportunities and collaborations. Feel free to reach out if you'd like to work together!
           </p>
-          <p className="text-muted-foreground max-w-2xl mx-auto mt-6">
+          <p className="text-foreground max-w-2xl mx-auto mt-6">
             Based in Edinburgh & St Andrews, Scotland
           </p>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+          <p className="text-foreground max-w-2xl mx-auto mb-6">
             Open to remote work in the UK
           </p>
           <h3 className="text-4xl font-bold gradient-text">

@@ -5,10 +5,21 @@ import SunIcon from '/light.svg';
 import MoonIcon from '/dark.svg';
 
 const Navbar = () => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(() => {
+    // Initialize theme immediately
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      document.documentElement.setAttribute('data-theme', storedTheme);
+      return storedTheme;
+    }
+    // Set default theme
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    return 'dark';
+  });
 
   useEffect(() => {
-    // Check if there's a stored preference
+    // This effect ensures theme persists across page reloads
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme) {
       setTheme(storedTheme);
