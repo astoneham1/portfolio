@@ -48,7 +48,7 @@ const certifications = [
     date: "Since 2025"
   },
   {
-    name: "Java Frontend and Backend Development",
+    name: "Java Development",
     provider: "Currently pursuing",
     date: "Since 2024"
   },
@@ -63,7 +63,7 @@ const certifications = [
     date: "2022/23"
   },
   {
-    name: "JavaScript Development",
+    name: "Simple JavaScript",
     provider: "Completed",
     date: "2021/22"
   },
