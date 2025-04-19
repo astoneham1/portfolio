@@ -1,20 +1,81 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Server, Palette, Cpu } from 'lucide-react';
+import { Code, Server, Palette, Cpu, Book, Terminal, Database, Layout } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const skills = [
   {
-    category: "Currently Learning",
-    items: ["React", "TypeScript", "Node.js", "Tailwind CSS", "JavaScript"]
+    category: "Programming Languages",
+    items: [
+      { name: "TypeScript", level: "Learning", experience: "Current focus" },
+      { name: "Java", level: "Intermediate", experience: "1 year" },
+      { name: "Python", level: "Intermediate", experience: "2+ years" },
+      { name: "JavaScript", level: "Intermediate", experience: "2+ years" },
+      { name: "Lua", level: "Advanced", experience: "4+ years" }
+    ]
   },
   {
-    category: "Skills",
-    items: ["Java", "Lua", "Python", "Bash", "SQLite", "MongoDB", "HTML", "CSS"]
+    category: "Frontend Development",
+    items: [
+      { name: "React", level: "Learning", experience: "Current focus" },
+      { name: "Tailwind", level: "Learning", experience: "Current focus" },
+      { name: "Desktop GUI (Java Swing)", level: "Intermediate", experience: "1 year" },
+      { name: "HTML", level: "Advanced", experience: "5+ years" },
+      { name: "CSS", level: "Advanced", experience: "5+ years" }
+    ]
   },
   {
-    category: "Tools",
-    items: ["Git", "Firebase", "Linux", "VS Code", "Figma"]
+    category: "Backend & Tools",
+    items: [
+      { name: "Node.js", level: "Learning", experience: "Current focus" },
+      { name: "Git", level: "Intermediate", experience: "1 year" },
+      { name: "MongoDB", level: "Intermediate", experience: "1 year" },
+      { name: "Linux", level: "Intermediate", experience: "2+ years" },
+      { name: "SQLite", level: "Advanced", experience: "3+ years" }
+    ]
+  }
+];
+
+const certifications = [
+  {
+    name: "C Programming",
+    provider: "Starting later this year",
+    date: "2025"
+  },
+  {
+    name: "Full Stack Development",
+    provider: "Currently pursuing",
+    date: "Since 2025"
+  },
+  {
+    name: "Java Frontend and Backend Development",
+    provider: "Currently pursuing",
+    date: "Since 2024"
+  },
+  {
+    name: "Networking",
+    provider: "Currently pursuing",
+    date: "Since 2023"
+  },
+  {
+    name: "Python",
+    provider: "Completed",
+    date: "2022/23"
+  },
+  {
+    name: "JavaScript Development",
+    provider: "Completed",
+    date: "2021/22"
+  },
+  {
+    name: "SQLite",
+    provider: "Completed",
+    date: "2021"
+  },
+  {
+    name: "HTML/CSS Basics",
+    provider: "Currently pursuing",
+    date: "2020/21"
   }
 ];
 
@@ -53,56 +114,90 @@ const About = () => {
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">About Me</h2>
           <p className="text-foreground max-w-2xl mx-auto">
-            I'm an aspiring developer who's passionate to learn and grow in the tech industry.
-            I have a strong foundation in both frontend and backend development,
-            and I'm always eager to take on new challenges.
+            My journey into development began with a fascination for problem-solving and creating digital experiences. 
+            From writing my first lines of code to building full-stack applications, each step has strengthened my 
+            passion for crafting efficient, user-friendly solutions that make a difference.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <AboutItem icon={Code} title="Frontend Development">
-            Frontend development has become a strong area of interest for me, driven by a genuine passion for creating 
-            engaging and intuitive user experiences. As I continue to build my skills in HTML, CSS, and JavaScript, 
-            I'm increasingly fascinated by the intersection of design and functionality. 
+          <AboutItem icon={Layout} title="Frontend Development">
+            My approach to frontend development combines technical precision with creative design thinking. 
+            I specialize in building responsive, accessible interfaces using React and modern CSS frameworks. 
+            I'm particularly passionate about creating smooth animations and micro-interactions that enhance 
+            the user experience while maintaining clean, maintainable code.
           </AboutItem>
           
           <AboutItem icon={Server} title="Backend Development">
-            Backend development is an area where I feel confident and continually motivated to grow. 
-            With experience in languages like Java, I enjoy designing robust, scalable systems that power applications behind the scenes. 
-            I'm particularly interested in how data flows through an application, from server logic to database interactions.
+            I'm taking my first steps into backend development, focusing on Java and Spring Framework. 
+            I've been working with core Java concepts like OOP, collections, and multithreading, while also 
+            exploring Spring Boot for building robust applications. I'm getting familiar with relational 
+            databases like MySQL and PostgreSQL, implementing JPA for data persistence.
           </AboutItem>
           
           <AboutItem icon={Palette} title="UI/UX Design">
-            I've developed a strong interest in UX design because I enjoy thinking from the user's perspective and finding ways to make 
-            digital experiences feel natural and intuitive. When working on projects, I focus on how people will interact with the interface 
-            and how each decision affects usability. I find it really rewarding to take something complex and simplify it into a clean, user-friendly design. 
+            My approach to UI/UX design is guided by user-centered design principles and accessibility standards. 
+            Using tools like Figma, I create intuitive interfaces that balance aesthetics with functionality. 
+            I regularly conduct user research and testing to ensure my designs meet real user needs while 
+            maintaining visual consistency and brand identity. I'm especially interested in creating user interfaces
+            that are accessible to users of all ages and abilities by staying simple but effective.
           </AboutItem>
           
-          <AboutItem icon={Cpu} title="Continuous Learning">
-            Technology is constantly evolving, and I'm committed to staying up to date by continuously expanding my knowledge and skill set. 
-            Whether it's exploring new frameworks, diving into documentation, or building personal projects to test new concepts, 
-            I approach learning with curiosity and enthusiasm. I actively seek out challenges that push me beyond my comfort zone and help me grow as a developer.
+          <AboutItem icon={Terminal} title="Continuous Learning">
+            Technology evolves rapidly, and I maintain a structured learning approach to stay current. 
+            I'm currently deepening my expertise in React and TypeScript through practical projects and 
+            online courses, with plans to explore C programming later this year. I actively contribute 
+            to open-source projects and participate in coding communities to share knowledge and learn from others.
+            I also keep myself updated with the latest trends and best practices in development.
           </AboutItem>
         </div>
         
         <div className="mt-12">
-          <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Skills and Tools</h3>
+          <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Skills and Expertise</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {skills.map((skillGroup, groupIndex) => (
               <div key={groupIndex} className="rounded-lg border border-border bg-card p-6 hover:bg-secondary/50 transition-all">
                 <h4 className="text-lg font-medium mb-4 text-portfolio-accent">{skillGroup.category}</h4>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-col gap-3">
                   {skillGroup.items.map((skill, skillIndex) => (
-                    <span 
-                      key={skillIndex} 
-                      className="inline-block px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-sm"
-                    >
-                      {skill}
-                    </span>
+                    <div key={skillIndex} className="relative">
+                      <div className="flex justify-between mb-1">
+                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                        <span className="text-xs text-muted-foreground">{skill.experience}</span>
+                      </div>
+                      <div className="w-full h-2 bg-secondary rounded-full">
+                        <div 
+                          className="h-full bg-portfolio-accent rounded-full transition-all duration-500"
+                          style={{ 
+                            width: skill.level === 'Advanced' ? '90%' : 
+                                  skill.level === 'Intermediate' ? '60%' : '30%' 
+                          }}
+                        />
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Learning Journey</h3>
+          <div className="max-w-2xl mx-auto">
+            <div className="space-y-4">
+              {certifications.map((cert, index) => (
+                <div key={index} className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-secondary/50 transition-all">
+                  <div className="rounded-full bg-portfolio-accent/10 p-2">
+                    <Book className="h-5 w-5 text-portfolio-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-foreground">{cert.name}</h4>
+                    <p className="text-sm text-muted-foreground">{cert.provider} • {cert.date}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

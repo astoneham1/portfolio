@@ -13,9 +13,9 @@ const Footer = ({ theme, toggleTheme }: FooterProps) => {
     <footer className="py-8 px-6 md:px-10">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center space-y-4">
         <h3 className="text-lg font-mono font-semibold">
-          <span className="text-portfolio-accent">{'< '}</span>
+          <span className="text-portfolio-accent">{'<'}</span>
           <span className="text-foreground">astoneham</span>
-          <span className="text-portfolio-accent">{'/ >'}</span>
+          <span className="text-portfolio-accent"><span className="mr-[1px]">/</span>{'>'}</span>
         </h3>
 
         <button

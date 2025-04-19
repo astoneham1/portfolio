@@ -59,12 +59,12 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 py-4">
-      <div className="max-w-5xl mx-auto flex justify-between items-center px-6 sm:px-8 lg:px-12">
+      <div className="max-w-4xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="w-[200px]">
           <h1 className="text-lg font-mono font-semibold">
-            <span className="text-portfolio-accent">{'< '}</span>
+            <span className="text-portfolio-accent">{'<'}</span>
             <span className="text-foreground">astoneham</span>
-            <span className="text-portfolio-accent">{'/ >'}</span>
+            <span className="text-portfolio-accent"><span className="mr-[1px]">/</span>{'>'}</span>
           </h1>
         </div>
 
