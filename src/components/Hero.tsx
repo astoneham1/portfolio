@@ -104,7 +104,12 @@ const Hero = () => {
           <a href="#projects">View Projects</a>
         </Button>
         <Button variant="outline" className="border-border hover:bg-secondary">
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="[transition:color_100ms_ease-in-out]"
+          >
             Download Resume
           </a>
         </Button>

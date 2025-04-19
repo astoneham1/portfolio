@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Code, Server, Palette, Cpu } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
 
 const skills = [
   {
@@ -17,21 +18,33 @@ const skills = [
   }
 ];
 
-const AboutItem = ({ icon: Icon, title, children }: { icon: React.ElementType, title: string, children: React.ReactNode }) => (
-  <Card className="bg-card border-border hover:bg-secondary/50 transition-colors">
-    <CardContent className="p-6">
-      <div className="flex items-start gap-4">
-        <div className="rounded-full bg-portfolio-accent/10 p-2 text-portfolio-accent">
-          <Icon className="h-6 w-6" />
+const AboutItem = ({ icon: Icon, title, children }: { icon: React.ElementType, title: string, children: React.ReactNode }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  return (
+    <Card 
+      ref={ref}
+      className={`bg-card p-6 rounded-lg border border-border transition-all duration-500 ${
+        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
+      <CardContent className="p-6">
+        <div className="flex items-start gap-4">
+          <div className="rounded-full bg-portfolio-accent/10 p-2 text-portfolio-accent">
+            <Icon className="h-6 w-6" />
+          </div>
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-foreground">{title}</h3>
+            <div className="text-foreground">{children}</div>
+          </div>
         </div>
-        <div>
-          <h3 className="text-lg font-medium mb-2 text-foreground">{title}</h3>
-          <div className="text-foreground">{children}</div>
-        </div>
-      </div>
-    </CardContent>
-  </Card>
-);
+      </CardContent>
+    </Card>
+  );
+};
 
 const About = () => {
   return (

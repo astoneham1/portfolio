@@ -37,19 +37,29 @@
     --radius: 0.5rem;
   }
 
-  /* Add smooth transition for theme changes */
+  /* Optimize theme transitions */
   :root {
-    @apply transition-colors duration-300;
+    @apply transition-colors duration-200;
+  }
+
+  /* Apply transitions only to specific properties that need them */
+  .theme-transition {
+    transition: background-color 200ms ease-in-out,
+                color 200ms ease-in-out,
+                border-color 200ms ease-in-out;
+  }
+
+  /* Remove default transitions */
+  button, a {
+    transition: transform 200ms ease-in-out,
+                opacity 200ms ease-in-out;
   }
 
   *, *::before, *::after {
-    transition: background-color 300ms ease-in-out,
-                border-color 300ms ease-in-out,
-                color 300ms ease-in-out,
-                fill 300ms ease-in-out,
-                stroke 300ms ease-in-out,
-                opacity 300ms ease-in-out,
-                box-shadow 300ms ease-in-out;
+    transition: background-color 200ms ease-in-out,
+                border-color 200ms ease-in-out,
+                opacity 200ms ease-in-out,
+                box-shadow 200ms ease-in-out;
   }
 }
 
@@ -133,7 +143,23 @@
 }
 
 .project-card {
-  @apply relative overflow-hidden rounded-lg border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-portfolio-accent/20;
+  @apply relative overflow-hidden rounded-lg border;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+.project-card img {
+  @apply transition-all duration-500;
+  transform-origin: center;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.project-card:hover img {
+  transform: scale(1.1) rotate(-1deg) translateZ(0);
+  filter: brightness(1.1);
 }
 
 .gradient-border {

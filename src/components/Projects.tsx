@@ -44,6 +44,48 @@ const Projects = () => {
     threshold: 0.1,
   });
 
+  const rafRef = useRef<number>();
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Cancel any pending animation frame
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+
+      rafRef.current = requestAnimationFrame(() => {
+        const cards = document.querySelectorAll('.project-card');
+        const currentScrollY = window.scrollY;
+        
+        // Only update if scroll position has changed significantly
+        if (Math.abs(currentScrollY - lastScrollY.current) < 5) return;
+        
+        lastScrollY.current = currentScrollY;
+        
+        cards.forEach((card) => {
+          const rect = (card as HTMLElement).getBoundingClientRect();
+          const centerPosition = (rect.top + rect.bottom) / 2;
+          const viewportHeight = window.innerHeight;
+          const distanceFromCenter = Math.abs(viewportHeight / 2 - centerPosition);
+          const maxDistance = viewportHeight / 2;
+          const scale = 1 - (distanceFromCenter / maxDistance) * 0.05; // Reduced scale effect
+          (card as HTMLElement).style.transform = `scale(${Math.min(Math.max(scale, 0.95), 1)})`; // Increased minimum scale
+        });
+      });
+    };
+
+    // Use passive event listener for better scroll performance
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section id="projects" className="py-20 px-6 md:px-10">
       <div className="max-w-6xl mx-auto">
@@ -61,7 +103,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className={`transition-opacity duration-700 ease-in-out ${inView ? 'opacity-100' : 'opacity-0'}`}
+              className={`project-card transition-opacity duration-700 ease-in-out ${inView ? 'opacity-100' : 'opacity-0'}`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <ProjectCard {...project} />
