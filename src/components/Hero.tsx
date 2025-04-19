@@ -82,18 +82,18 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 gradient-text animate-fade-in animation-delay-200">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-text animate-fade-in animation-delay-200">
         Alessandro
       </h1>
 
-      <div className="h-12 flex items-center justify-center">
+      <div className="h-12 flex items-center justify-center mb-6">
         <h2 className="text-xl md:text-2xl text-foreground/80 font-medium animate-fade-in animation-delay-300">
           {displayText}
           <span className="typing-cursor"></span>
         </h2>
       </div>
 
-      <p className="max-w-2xl text-foreground my-4 animate-fade-in animation-delay-400">
+      <p className="max-w-2xl text-foreground animate-fade-in animation-delay-400">
         Experienced in Java backend development and SQL database management,
         I also possess a strong interest in front-end technologies.
         My ongoing professional development includes studying networking principles and the C programming language.
