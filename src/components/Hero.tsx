@@ -95,7 +95,7 @@ const Hero = () => {
 
       <p className="max-w-2xl text-foreground animate-fade-in animation-delay-400">
         Passionate about building robust backends with Java and creating seamless user experiences with modern web technologies. 
-        Currently exploring system-level programming with C and diving deep into network architecture, while actively contributing to open-source projects.
+        Moving onto learning system-level programming with C and diving deep into network architecture, while actively contributing to open-source projects.
       </p>
 
       <div className="mt-5 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in animation-delay-500 justify-center">
@@ -109,13 +109,13 @@ const Hero = () => {
             rel="noopener noreferrer" 
             className="[transition:color_100ms_ease-in-out]"
           >
-            Download Resume
+            View CV
           </a>
         </Button>
       </div>
 
       <div className="relative mt-24 flex justify-center">
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a href="#projects">
             <ArrowDown className="h-6 w-6 text-muted-foreground hover:text-portfolio-accent" />
           </a>
