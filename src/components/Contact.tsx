@@ -16,9 +16,16 @@ const Contact = () => {
           <p className="text-foreground max-w-2xl mx-auto mb-6">
             Open to remote work in the UK
           </p>
-          <h3 className="text-4xl font-bold gradient-text">
-            me@alexstoneham.co.uk
-          </h3>
+          <div className="group relative">
+            <h3 className="text-2xl md:text-4xl font-bold gradient-text break-all hover:opacity-80 transition-opacity">
+              <a href="mailto:me@alexstoneham.co.uk" className="hover:underline">
+                me@alexstoneham.co.uk
+              </a>
+            </h3>
+            <div className="opacity-0 group-hover:opacity-100 absolute left-1/2 -translate-x-1/2 -bottom-8 transition-opacity text-sm text-foreground/70">
+              Send me an email!
+            </div>
+          </div>
         </div>
       </div>
     </section>
