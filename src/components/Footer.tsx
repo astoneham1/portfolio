@@ -1,7 +1,12 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-const Footer = () => {
+interface FooterProps {
+  theme: string;
+  toggleTheme: () => void;
+}
+
+const Footer = ({ theme, toggleTheme }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -12,6 +17,18 @@ const Footer = () => {
           <span className="text-foreground">astoneham</span>
           <span className="text-portfolio-accent">{'/ >'}</span>
         </h3>
+
+        <button
+          onClick={toggleTheme}
+          className="rounded-full transition-transform duration-200 hover:scale-125"
+          aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+        >
+          <img
+            src={theme === 'dark' ? '/dark.svg' : '/light.svg'}
+            alt={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            className="h-5 w-5"
+          />
+        </button>
 
         <div className="flex space-x-6">
           <a

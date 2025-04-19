@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Menu } from 'lucide-react';
 import {
@@ -10,37 +10,13 @@ import {
 import SunIcon from '/light.svg';
 import MoonIcon from '/dark.svg';
 
-const Navbar = () => {
-  const [theme, setTheme] = useState(() => {
-    // Initialize theme immediately
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-      document.documentElement.setAttribute('data-theme', storedTheme);
-      return storedTheme;
-    }
-    // Set default theme
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-    return 'dark';
-  });
+interface NavbarProps {
+  theme: string;
+  toggleTheme: () => void;
+}
 
+const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    // This effect ensures theme persists across page reloads
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-      setTheme(storedTheme);
-      document.documentElement.setAttribute('data-theme', storedTheme);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-  };
 
   const NavLinks = () => (
     <>

@@ -36,6 +36,21 @@
 
     --radius: 0.5rem;
   }
+
+  /* Add smooth transition for theme changes */
+  :root {
+    @apply transition-colors duration-300;
+  }
+
+  *, *::before, *::after {
+    transition: background-color 300ms ease-in-out,
+                border-color 300ms ease-in-out,
+                color 300ms ease-in-out,
+                fill 300ms ease-in-out,
+                stroke 300ms ease-in-out,
+                opacity 300ms ease-in-out,
+                box-shadow 300ms ease-in-out;
+  }
 }
 
 [data-theme='light'] {
@@ -143,6 +158,26 @@
   }
   100% {
     transform: translate(-5%, -5%) scale(1.5);
+  }
+}
+
+@keyframes expand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
