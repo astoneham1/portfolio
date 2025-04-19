@@ -23,9 +23,8 @@ const projects: ProjectProps[] = [
     title: "EAFC 24 Pack Opener and Minigames",
     description: "A lightweight application where you can pack cards, build drafts, and play an endless amount of minigames with the cards in EA's FC 24.",
     image: "https://i.gyazo.com/e3ccd1dab2765ef235bf4c9c2feee7fa.png",
-    //image: "https://i.gyazo.com/bf7e8b23b803faf872272ad60993d835.jpg",
     tags: ["Livecode", "SQLite", "EAFC24", "FIFA"],
-    githubUrl: "https://github.com/astoneham1/",
+    githubUrl: "https://github.com/astoneham1/higherlower",
     liveUrl: ""
   },
   {
