@@ -22,7 +22,7 @@ const Hero = () => {
       typingInterval = setInterval(() => {
         setDisplayText(fullText.slice(0, currentIndex + 1));
         currentIndex++;
-        
+
         if (currentIndex >= fullText.length) {
           clearInterval(typingInterval);
           // Schedule next typing animation
@@ -94,7 +94,7 @@ const Hero = () => {
       </div>
 
       <p className="max-w-2xl text-foreground animate-fade-in animation-delay-400">
-        Passionate about building robust backends with Java and creating seamless user experiences with modern web technologies. 
+        Passionate about building robust backends with Java and creating seamless user experiences with modern web technologies.
         Moving onto learning system-level programming with C and diving deep into network architecture, while actively contributing to open-source projects.
       </p>
 
@@ -103,10 +103,10 @@ const Hero = () => {
           <a href="#projects">View Projects</a>
         </Button>
         <Button variant="outline" className="border-border hover:bg-secondary">
-          <a 
-            href="/resume.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="[transition:color_100ms_ease-in-out]"
           >
             View CV
@@ -115,7 +115,7 @@ const Hero = () => {
       </div>
 
       <div className="relative mt-24 flex justify-center">
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
           <a href="#projects">
             <ArrowDown className="h-6 w-6 text-muted-foreground hover:text-portfolio-accent" />
           </a>
