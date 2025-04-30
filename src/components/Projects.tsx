@@ -4,11 +4,27 @@ import { useInView } from 'react-intersection-observer';
 
 const projects: ProjectProps[] = [
   {
+    title: "Nonograms Puzzle",
+    description: "A university group project - a Nonograms game that works with different sized and colored puzzles. Includes a presentable UI built in Java Swing, a checker to check the progress of the current puzzle, and a solver that works with a couple of puzzles. My contribution to this project was implementing a fully functional GUI using Java Swing to implement the backend features.",
+    image: "https://i.gyazo.com/1fe4fb6d53291ba6af63a886de46d7c7.png",
+    tags: ["Java", "Java Swing", "JSON", "Puzzle"],
+    githubUrl: "https://github.com/astoneham1/nonograms",
+    liveUrl: ""
+  },
+  {
+    title: "Breakout Game",
+    description: "A university group project - a game inspired by Breakout, where the user controls a paddle to bounce a ball into bricks to break them. Contains multiple levels and powers. Built using the Processing environment for Java. My contribution to this project was implementing the game logic and the level system.",
+    image: "https://i.gyazo.com/de97d754df3ecd7af4187fb575cd6e4c.png",
+    tags: ["Java", "Processing", "Level Progression", "Game"],
+    githubUrl: "https://github.com/astoneham1/brickbreak",
+    liveUrl: ""
+  },
+  {
     title: "Java + SQLite Implementation Example",
     description: "A university assignment - I created a Java application that connects to an SQLite database, allowing users to perform CRUD operations on a simple data model such as inserting predefined DDL schema and queries with command line arguments.",
     image: "/placeholder.svg",
     tags: ["Java", "SQLite", "JDBC API", "Command Line Args"],
-    githubUrl: "https://astoneham1.github.io/P3/",
+    githubUrl: "https://astoneham1.github.io/jdbc/",
     liveUrl: ""
   },
   {
