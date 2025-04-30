@@ -27,7 +27,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   );
 
   const SocialLinks = () => (
-    <>
+    <div className="flex items-center space-x-6">
       <Button variant="ghost" size="icon" className="hover:bg-transparent focus:ring-0 transition-transform duration-200 hover:scale-125 p-0">
         <a href="https://github.com/astoneham1" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full">
           <Github className="h-5 w-5 text-foreground" />
@@ -54,7 +54,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
           className="h-5 w-5"
         />
       </button>
-    </>
+    </div>
   );
 
   return (
