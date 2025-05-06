@@ -28,12 +28,12 @@ const projects: ProjectProps[] = [
     liveUrl: ""
   },
   {
-    title: "Order Simulator",
-    description: "Built for food lovers, this immersive simulator lets you choose your favorite restaurant or some of the fictional ones, explore a vast catalog of food and drink items and experience the fun of placing and customizing orders—without spending a penny.",
-    image: "/placeholder.svg",
-    tags: ["React", "Node.js", "MongoDB", "D3.js"],
-    githubUrl: "https://github.com/astoneham1/",
-    liveUrl: ""
+    title: "Country Statistics Viewer",
+    description: "A simple app using Java and Swing that calls the restcountries API to display cool and fun stats about a country that a user enters. Complete build with a DMG for MacOS available, with support for other platforms and additional features coming soon.",
+    image: "https://i.gyazo.com/70a51a8b574b5078ec7719b77a1f3bf9.png",
+    tags: ["Java", "Java Swing", "JSON", "Restcountries API", "MacOS"],
+    githubUrl: "https://github.com/astoneham1/countries-api-client",
+    liveUrl: "https://github.com/astoneham1/countries-api-client/releases/latest"
   },
   {
     title: "EAFC 24 Pack Opener and Minigames",

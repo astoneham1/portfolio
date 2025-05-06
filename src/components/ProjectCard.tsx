@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
           <Button variant="ghost" size="sm" className="px-2 ml-auto text-foreground hover:text-foreground">
             <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
               <ExternalLink className="h-4 w-4 mr-2" />
-              View Project
+              View/Download
             </a>
           </Button>
         )}

@@ -28,10 +28,10 @@ const skills = [
     category: "Backend & Tools",
     items: [
       { name: "Node.js", level: "Learning", experience: "Current focus" },
-      { name: "Git", level: "Intermediate", experience: "1 year" },
       { name: "MongoDB", level: "Intermediate", experience: "1 year" },
       { name: "Linux", level: "Intermediate", experience: "2+ years" },
-      { name: "SQLite", level: "Advanced", experience: "3+ years" }
+      { name: "SQLite", level: "Advanced", experience: "3+ years" },
+      { name: "Git", level: "Advanced", experience: "5+ years" }
     ]
   }
 ];
@@ -74,7 +74,7 @@ const certifications = [
   },
   {
     name: "HTML/CSS Basics",
-    provider: "Currently pursuing",
+    provider: "Completed",
     date: "2020/21"
   }
 ];
@@ -114,41 +114,35 @@ const About = () => {
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">About Me</h2>
           <p className="text-foreground max-w-2xl mx-auto">
-            My journey into development began with a fascination for problem-solving and creating digital experiences. 
-            From writing my first lines of code to building full-stack applications, each step has strengthened my 
-            passion for crafting efficient, user-friendly solutions that make a difference.
+            I got into coding because I liked solving problems and making things on the computer.
+            Starting with basic code and working up to full apps, I’ve enjoyed learning how to build
+            things that work well and are easy to use.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <AboutItem icon={Layout} title="Frontend Development">
-            My approach to frontend development combines technical precision with creative design thinking. 
-            I specialize in building responsive, accessible interfaces using React and modern CSS frameworks. 
-            I'm particularly passionate about creating smooth animations and micro-interactions that enhance 
-            the user experience while maintaining clean, maintainable code.
+            I like mixing coding with design to build clean, responsive websites.
+            I use React and modern CSS tools to make interfaces that work well on any device.
+            I especially enjoy adding smooth animations and small interactive touches that make the experience feel better, while keeping my code tidy and easy to manage.
           </AboutItem>
           
           <AboutItem icon={Server} title="Backend Development">
-            I'm taking my first steps into backend development, focusing on Java and Spring Framework. 
-            I've been working with core Java concepts like OOP, collections, and multithreading, while also 
-            exploring Spring Boot for building robust applications. I'm getting familiar with relational 
-            databases like MySQL and PostgreSQL, implementing JPA for data persistence.
+            I’m just getting started with backend development, mainly using Java and the Spring Framework.
+            I’ve been learning key Java topics like OOP, collections, and multithreading, and using Spring Boot to build solid apps.
+            I’m also working with databases like MySQL and PostgreSQL, using JPA to handle data.
           </AboutItem>
           
           <AboutItem icon={Palette} title="UI/UX Design">
-            My approach to UI/UX design is guided by user-centered design principles and accessibility standards. 
-            Using tools like Figma, I create intuitive interfaces that balance aesthetics with functionality. 
-            I regularly conduct user research and testing to ensure my designs meet real user needs while 
-            maintaining visual consistency and brand identity. I'm especially interested in creating user interfaces
-            that are accessible to users of all ages and abilities by staying simple but effective.
+            I focus on designing user-friendly and accessible interfaces.
+            I use Figma to create designs that look good and work well, always keeping real users in mind.
+            I do user research and testing to make sure my designs are clear, consistent, and easy for everyone to use.
           </AboutItem>
           
           <AboutItem icon={Terminal} title="Continuous Learning">
-            Technology evolves rapidly, and I maintain a structured learning approach to stay current. 
-            I'm currently deepening my expertise in React and TypeScript through practical projects and 
-            online courses, with plans to explore C programming later this year. I actively contribute 
-            to open-source projects and participate in coding communities to share knowledge and learn from others.
-            I also keep myself updated with the latest trends and best practices in development.
+            Technology changes fast, so I follow a steady learning plan to keep up.
+            Right now while university is on break, I’m improving my skills in React and TypeScript by building projects and taking online courses.
+            I plan to learn C and further refine my frontend skills later this year when university resumes.
           </AboutItem>
         </div>
         

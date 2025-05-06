@@ -94,8 +94,8 @@ const Hero = () => {
       </div>
 
       <p className="max-w-2xl text-foreground animate-fade-in animation-delay-400">
-        Passionate about building robust backends with Java and creating seamless user experiences with modern web technologies.
-        Moving onto learning system-level programming with C and diving deep into network architecture, while actively contributing to open-source projects.
+        I enjoy building strong backends with Java and making smooth user experiences with modern web tools.
+        Now I’m learning low-level programming with C and exploring how networks work, as well as the odd detour into other parts of programming.
       </p>
 
       <div className="mt-5 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in animation-delay-500 justify-center">
