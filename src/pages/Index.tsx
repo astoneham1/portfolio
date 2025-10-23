@@ -47,7 +47,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden relative">
+    <div className="min-h-[100svh] w-full overflow-x-hidden relative bg-background">
       <div className="animated-gradient" />
       <header className="sticky top-0 left-0 right-0 z-50" role="banner">
         <div className="backdrop-blur-md bg-background/30 border-b border-border/40">
