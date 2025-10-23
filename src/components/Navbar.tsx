@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/drawer";
 import SunIcon from '/light.svg';
 import MoonIcon from '/dark.svg';
-import { LINKS } from '../constants/links.ts';
+import { LINKS } from '@/constants/links.ts';
 
 type Theme = 'light' | 'dark';
 
