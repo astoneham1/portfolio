@@ -13,7 +13,7 @@ const Footer = ({ theme, toggleTheme }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 px-6 md:px-10 bg-background" role="contentinfo">
+    <footer className="py-8 px-6 md:px-10" role="contentinfo">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center space-y-4">
         <h3 className="text-lg font-mono font-semibold">
           <span className="text-portfolio-accent">{'<'}</span>

@@ -111,22 +111,6 @@
     @apply border-border;
   }
 
-  /* Ensure background is applied at the root to avoid white gaps on mobile */
-  :root {
-    color-scheme: light dark;
-  }
-
-  html, body {
-    background-color: hsl(var(--background));
-    min-height: 100%;
-  }
-
-  #root { min-height: 100%; }
-
-  @supports (min-height: 100dvh) {
-    html, body, #root { min-height: 100dvh; }
-  }
-
   body {
     @apply antialiased;
     color: hsl(var(--foreground));
@@ -299,5 +283,5 @@
 
 .cv-auto {
   content-visibility: auto;
-  contain-intrinsic-size: 384px;
+  contain-intrinsic-size: 384px 100%;
 }
