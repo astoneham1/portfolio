@@ -46,8 +46,23 @@ const Index = () => {
     document.title = "Alex Stoneham | Portfolio";
   }, []);
 
+  // Robust dynamic viewport fix for mobile address bar show/hide
+  useEffect(() => {
+    const setVh = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+    setVh();
+    window.addEventListener('resize', setVh);
+    window.addEventListener('orientationchange', setVh);
+    return () => {
+      window.removeEventListener('resize', setVh);
+      window.removeEventListener('orientationchange', setVh);
+    };
+  }, []);
+
   return (
-    <div className="min-h-[100svh] w-full overflow-x-hidden relative bg-background">
+    <div className="min-h-[100dvh] w-full overflow-x-hidden relative bg-background" style={{ minHeight: 'calc(var(--vh, 1vh) * 100)' }}>
       <div className="animated-gradient" />
       <header className="sticky top-0 left-0 right-0 z-50" role="banner">
         <div className="backdrop-blur-md bg-background/30 border-b border-border/40">
