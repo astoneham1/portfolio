@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Github, ExternalLink } from 'lucide-react';
-import { prefersReducedMotion } from '@/lib/a11y.ts';
+import { prefersReducedMotion } from '../lib/a11y.ts';
 
 export interface ProjectProps {
   title: string;

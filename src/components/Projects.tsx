@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import ProjectCard from './ProjectCard';
 import { useInView } from 'react-intersection-observer';
-import { prefersReducedMotion } from '@/lib/a11y.ts';
+import { prefersReducedMotion } from '../lib/a11y.ts';
 import projects from '@/data/projects.ts';
 
 const Projects = () => {
