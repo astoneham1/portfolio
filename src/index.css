@@ -1,0 +1,287 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 265 89% 78%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 265 89% 78%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+  }
+
+  /* Optimize theme transitions */
+  :root {
+    @apply transition-colors duration-200;
+  }
+
+  /* Apply transitions only to specific properties that need them */
+  .theme-transition {
+    transition: background-color 200ms ease-in-out,
+                color 200ms ease-in-out,
+                border-color 200ms ease-in-out;
+  }
+
+  /* Remove default transitions */
+  button, a {
+    transition: transform 200ms ease-in-out,
+                opacity 200ms ease-in-out;
+  }
+
+  *, *::before, *::after {
+    transition: background-color 200ms ease-in-out,
+                border-color 200ms ease-in-out;
+  }
+}
+
+[data-theme='light'] {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 265 89% 78%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 5% 96%;
+  --secondary-foreground: 240 10% 3.9%;
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 265 89% 78%;
+  --accent-foreground: 240 10% 3.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 10% 3.9%;
+  --radius: 0.5rem;
+}
+
+[data-theme='dark'] {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 6% 12%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 6% 12%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 265 89% 78%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 265 89% 78%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased;
+    color: hsl(var(--foreground));
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-portfolio-accent to-portfolio-accent-light;
+}
+
+.animated-link {
+  @apply relative inline-block;
+}
+
+.animated-link::after {
+  @apply absolute left-0 bottom-0 h-0.5 w-0 bg-portfolio-accent transition-all duration-300 ease-in-out;
+  content: '';
+}
+
+.animated-link:hover::after {
+  @apply w-full;
+}
+
+.project-card {
+  @apply relative overflow-hidden rounded-lg border;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+.project-card img {
+  @apply transition-all duration-500;
+  transform-origin: center;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.project-card:hover img {
+  transform: scale(1.1) rotate(-1deg) translateZ(0);
+  filter: brightness(1.1);
+}
+
+.gradient-border {
+  @apply relative rounded-lg;
+  background: linear-gradient(#121212, #121212) padding-box,
+             linear-gradient(to right, #8B5CF6, #A78BFA) border-box;
+  border: 1px solid transparent;
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+  @apply inline-block h-4 w-0.5 animate-blink ml-0.5;
+  background-color: currentColor;
+}
+
+@keyframes move {
+  0% {
+    transform: translate3d(-2%, -3%, 0);
+  }
+  50% {
+    transform: translate3d(2%, 1.5%, 0);
+  }
+  100% {
+    transform: translate3d(-2%, -3%, 0);
+  }
+}
+
+@keyframes expand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Dark mode gradient */
+[data-theme='dark'] .animated-gradient {
+  position: fixed;
+  top: -25vmax;
+  left: -25vmax;
+  width: calc(100% + 50vmax);
+  height: calc(100% + 50vmax);
+  background:
+    radial-gradient(55rem 55rem at 18% 22%, rgba(139, 92, 246, 0.48), transparent 62%),
+    radial-gradient(50rem 50rem at 82% 28%, rgba(168, 85, 247, 0.42), transparent 66%),
+    radial-gradient(44rem 44rem at 28% 78%, rgba(124, 58, 237, 0.32), transparent 72%),
+    radial-gradient(36rem 36rem at 72% 76%, rgba(147, 51, 234, 0.30), transparent 72%),
+    linear-gradient(180deg, rgba(10, 8, 20, 0.94), rgba(10, 8, 20, 0.94));
+  will-change: transform;
+  animation: move 40s ease-in-out infinite;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+/* Light mode gradient */
+[data-theme='light'] .animated-gradient {
+  position: fixed;
+  top: -25vmax;
+  left: -25vmax;
+  width: calc(100% + 50vmax);
+  height: calc(100% + 50vmax);
+  background:
+    radial-gradient(56rem 56rem at 16% 22%, rgba(196, 181, 253, 0.85), transparent 60%),
+    radial-gradient(50rem 50rem at 84% 28%, rgba(167, 139, 250, 0.78), transparent 66%),
+    radial-gradient(44rem 44rem at 28% 82%, rgba(216, 180, 254, 0.70), transparent 72%),
+    radial-gradient(36rem 36rem at 72% 78%, rgba(186, 230, 253, 0.45), transparent 72%),
+    /* subtle lavender base to avoid flat white */
+    linear-gradient(180deg, rgba(243, 236, 255, 0.98), rgba(238, 230, 252, 0.98));
+  will-change: transform;
+  animation: move 40s ease-in-out infinite;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+/* Projects section background */
+#projects {
+  position: relative;
+  isolation: isolate;
+}
+
+#projects::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+  z-index: -1;
+   background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    hsl(var(--background)) 15%,
+    hsl(var(--background)) 85%,
+    transparent 100%
+  );
+}
+
+[data-theme='dark'] #projects::before {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 384px 100%;
+}
