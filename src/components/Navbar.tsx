@@ -90,7 +90,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
         <img
           src={theme === 'dark' ? MoonIcon : SunIcon}
           alt={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-          className="h-5 w-5"
+          className={`h-5 w-5 ${theme === 'dark' ? 'invert' : ''}`}
         />
       </button>
     </div>
@@ -128,7 +128,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
             <img
               src={theme === 'dark' ? MoonIcon : SunIcon}
               alt={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-              className="h-5 w-5"
+              className={`h-5 w-5 ${theme === 'dark' ? 'invert' : ''}`}
             />
           </button>
           <Drawer open={isOpen} onOpenChange={setIsOpen}>
