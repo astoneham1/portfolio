@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { LINKS } from '@/constants/links.ts';
+import { LINKS } from '../constants/links.ts';
 
 type Theme = 'light' | 'dark';
 
